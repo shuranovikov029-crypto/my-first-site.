@@ -40,5 +40,16 @@ button{
 <p>Я учусь создавать сайты.</p>
 <p><img src="foto2.jpg" alt="картинка не выдалась"></p>
 
+<button onclick="changeColor()">Нажми меня</button>
+
+<p id="text">Этот текст меняет цвет</p>
+
+<script>
+function changeColor() {
+    let color = "#" + Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById("text").style.color = color;
+}
+</script>
+
 </body>
 </html>
