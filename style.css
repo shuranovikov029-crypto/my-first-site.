@@ -15,12 +15,12 @@
     transform-style:preserve-3d;
 }
 
-#cube div{
+#cube > div{
     position:absolute;
     width:150px;
     height:150px;
-    border:2px solid white;
     background:rgba(0,150,255,0.5);
+    border:2px solid white;
 }
 
 .front{transform:translateZ(75px);}
@@ -29,3 +29,6 @@
 .right{transform:rotateY(90deg) translateZ(75px);}
 .top{transform:rotateX(90deg) translateZ(75px);}
 .bottom{transform:rotateX(-90deg) translateZ(75px);}
+#scene{
+    margin:50px auto;
+}
